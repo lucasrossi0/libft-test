@@ -1,5 +1,5 @@
-#include <stdio.h>
-#include <unistd.h>
+// #include <stdio.h>
+// #include <unistd.h>
 
 int ft_atoi(const char *str) {
   int i;
@@ -18,13 +18,13 @@ int ft_atoi(const char *str) {
     res = res * 10 + (str[i] - '0');
     i++;
   }
-  return (res);
+  return (res * pos);
 }
-
+/*
 int main(void) {
-  const char *str = "-53";
+  const char *str = "-535";
   int test = ft_atoi(str);
-  // printf("Testando %d", test);
+  printf("Testando %d", test);
   int p1 = test / 10;
   int p2 = test % 10;
   // printf("Testando P1 %d", p1);
@@ -36,3 +36,4 @@ int main(void) {
   write(1, &p2, 1);
   return (0);
 }
+*/
