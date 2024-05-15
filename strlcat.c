@@ -12,7 +12,8 @@ int ft_strlcat(char *to, char *from, int size)
     if (size <= 0)
         return (i);
     j = 0;
-    while (from[j] != '\0' || size != 0) {
+    printf("Testando i %d\n", i);
+    while (from[j] != '\0' && size != 0) {
         to[i] = from[j];
         i++;
         j++;
