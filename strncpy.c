@@ -23,6 +23,7 @@ char *ft_strncpy (char *to, const char *from, size_t size)
     to[i] = '\0';
     return (to);
 }
+
 /*
 int main(void)
 {
